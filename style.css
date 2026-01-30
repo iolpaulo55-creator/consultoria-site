@@ -1,40 +1,159 @@
-body {
-  font-family: Arial, sans-serif;
+/* RESET BÁSICO */
+* {
   margin: 0;
-  background: #f5f5f5;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================= HEADER COM FUNDO ================= */
 header {
-  background: #0a2540;
+  /* Imagem de fundo com overlay escuro para melhor leitura */
+  background-image: linear-gradient(
+      rgba(10, 37, 64, 0.75),
+      rgba(10, 37, 64, 0.75)
+    ),
+    url("foto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
-  padding: 60px 20px;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+/* BOTÃO CHAMATIVO */
+.btn {
+  display: inline-block;
+  background: #00c853;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00a844;
+  transform: translateY(-2px);
+}
+
+/* ================= SEÇÕES ================= */
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
   text-align: center;
 }
 
-.btn {
-  background: #00c853;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+section ol {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+  list-style-position: inside;
+  line-height: 1.8;
 }
 
-form input, form textarea, form button {
+/* ================= FORMULÁRIO ================= */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
   width: 100%;
+  max-width: 500px;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
 }
 
 form button {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px;
   background: #0a2540;
   color: white;
   border: none;
+  border-radius: 30px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+form button:hover {
+  background: #071a2a;
+  transform: translateY(-2px);
+}
+
+.privacidade {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ================= RODAPÉ ================= */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0a2540;
+  color: white;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  form input,
+  form textarea {
+    max-width: 100%;
+  }
+
+  form button {
+    max-width: 100%;
+  }
+}
+
