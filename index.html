@@ -2,71 +2,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Diagnóstico empresarial - Paulo Kataoka</title>
+  <title>Consultoria Estratégica para Lojas</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consultoria online prática para comerciantes. Análise personalizada do seu negócio com soluções aplicáveis.">
+  <meta name="description" content="Consultoria estratégica online para comerciantes. Diagnóstico prático e soluções aplicáveis para aumentar resultados.">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HERO / TOPO COM FUNDO LED -->
-  <header id="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1 class="neon-text">Diagnóstico empresarial 2026</h1>
-      <p>
-        Análise estratégica do seu negócio com soluções simples,
-        aplicáveis e focadas em resultado.
-      </p>
-      <a href="#formulario" class="btn neon-btn">Solicitar Análise</a>
+<header class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="badge">Consultoria Online</span>
+    <h1>Transforme sua loja em um negócio <span>mais lucrativo</span></h1>
+    <p>
+      Análise estratégica personalizada com foco em vendas,
+      posicionamento e decisões práticas.
+    </p>
+
+    <a href="#formulario" class="btn-primary">Solicitar Diagnóstico</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Como funciona</h2>
+
+  <div class="cards">
+    <div class="card">
+      <span>01</span>
+      <h3>Diagnóstico</h3>
+      <p>Você responde um formulário rápido sobre seu negócio.</p>
     </div>
-  </header>
 
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona" class="section">
-    <h2 class="section-title">Como funciona</h2>
-    <ol class="steps">
-      <li>Você preenche o formulário com informações do seu negócio</li>
-      <li>Eu analiso os dados e identifico oportunidades de melhoria</li>
-      <li>Você recebe uma solução prática por e-mail ou WhatsApp</li>
-    </ol>
-  </section>
+    <div class="card">
+      <span>02</span>
+      <h3>Análise estratégica</h3>
+      <p>Identifico falhas, oportunidades e pontos de crescimento.</p>
+    </div>
 
-  <!-- FORMULÁRIO -->
-  <section id="formulario" class="section">
-    <h2 class="section-title">Solicitar Diagnóstico</h2>
+    <div class="card">
+      <span>03</span>
+      <h3>Plano prático</h3>
+      <p>Você recebe ações claras para aplicar imediatamente.</p>
+    </div>
+  </div>
+</section>
 
-    <form action="https://formspree.io/f/xpqrjjng" method="POST" id="consultoria-form">
-      <!-- Anti-spam -->
-      <input type="text" name="_gotcha" style="display:none">
-      <!-- Redirecionamento pós-envio -->
-      <input type="hidden" name="_redirect" value="https://seudominio.com/obrigado.html">
+<section class="section destaque" id="formulario">
+  <h2>Solicitar consultoria</h2>
 
-      <input type="text" name="nome" placeholder="Seu nome" required autocomplete="name">
-      <input type="text" name="negocio" placeholder="Nome do negócio" required autocomplete="organization">
-      <input type="text" name="segmento" placeholder="Segmento do negócio" required autocomplete="off">
-      <textarea name="desafio" placeholder="Descreva seu principal desafio hoje" required></textarea>
-      <input type="email" name="email" placeholder="Seu e-mail" required autocomplete="email">
-      <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)" autocomplete="tel">
-      
-      <button type="submit" class="btn neon-btn">Enviar Solicitação</button>
-      
-      <p class="privacidade">
-        🔒 As informações enviadas são confidenciais e usadas apenas para a análise solicitada.
-      </p>
-    </form>
-  </section>
+  <form action="https://formspree.io/f/xpqrjjng" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="text" name="negocio" placeholder="Nome do negócio" required>
+    <input type="text" name="segmento" placeholder="Segmento do negócio" required>
+    <textarea name="desafio" placeholder="Qual é seu principal desafio hoje?" required></textarea>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)">
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2026 – Diagnóstico online / Paulo Kataoka</p>
-  </footer>
+    <button type="submit">Enviar solicitação</button>
 
-  <!-- LINK PARA JAVASCRIPT -->
-  <script src="script.js"></script>
+    <small>🔒 Suas informações são confidenciais.</small>
+  </form>
+</section>
 
+<footer>
+  <p>© 2026 • Consultoria Estratégica — Paulo Kataoka</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
 
