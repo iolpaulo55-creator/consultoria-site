@@ -3,49 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <title>Consultoria Online para Negócios</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Consultoria online prática para comerciantes. Análise personalizada do seu negócio com soluções aplicáveis.">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- HERO / TOPO COM IMAGEM DE FUNDO -->
   <header>
     <h1>Consultoria prática para comerciantes</h1>
-    <p>Análise do seu negócio com soluções personalizadas e aplicáveis.</p>
+    <p>
+      Análise estratégica do seu negócio com soluções simples,
+      aplicáveis e focadas em resultado.
+    </p>
     <a href="#formulario" class="btn">Solicitar análise</a>
   </header>
 
+  <!-- COMO FUNCIONA -->
   <section>
     <h2>Como funciona</h2>
     <ol>
-      <li>Você preenche o formulário</li>
-      <li>Eu analiso seu negócio</li>
-      <li>Você recebe a solução por e-mail ou WhatsApp</li>
+      <li>Você preenche o formulário com informações do seu negócio</li>
+      <li>Eu analiso os dados e identifico oportunidades de melhoria</li>
+      <li>Você recebe uma solução prática por e-mail ou WhatsApp</li>
     </ol>
   </section>
 
+  <!-- FORMULÁRIO -->
   <section id="formulario">
     <h2>Solicitar consultoria</h2>
 
     <form action="https://formspree.io/f/xpqrjjng" method="POST">
 
-      <!-- Proteção anti-spam -->
+      <!-- Anti-spam -->
       <input type="text" name="_gotcha" style="display:none">
 
-      <!-- Redirecionamento após envio -->
+      <!-- Redirecionamento pós-envio -->
       <input type="hidden" name="_redirect" value="https://seudominio.com/obrigado.html">
 
-      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input
+        type="text"
+        name="nome"
+        placeholder="Seu nome"
+        required
+      >
 
-      <input type="text" name="negocio" placeholder="Nome do negócio" required>
+      <input
+        type="text"
+        name="negocio"
+        placeholder="Nome do negócio"
+        required
+      >
 
-      <input type="text" name="segmento" placeholder="Segmento do negócio" required>
+      <input
+        type="text"
+        name="segmento"
+        placeholder="Segmento do negócio"
+        required
+      >
 
-      <textarea name="desafio" placeholder="Descreva seu principal desafio" required></textarea>
+      <textarea
+        name="desafio"
+        placeholder="Descreva seu principal desafio hoje"
+        required
+      ></textarea>
 
-      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input
+        type="email"
+        name="email"
+        placeholder="Seu e-mail"
+        required
+      >
 
-      <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)">
+      <input
+        type="tel"
+        name="whatsapp"
+        placeholder="WhatsApp (opcional)"
+      >
 
       <button type="submit">Enviar solicitação</button>
 
@@ -56,10 +92,12 @@
     </form>
   </section>
 
+  <!-- RODAPÉ -->
   <footer>
     <p>© 2026 – Consultoria Online</p>
   </footer>
 
 </body>
 </html>
+
 
