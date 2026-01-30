@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>Consultoria Online para Negócios</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consultoria online prática para comerciantes. Análise personalizada do seu negócio com soluções aplicáveis.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <h1>Consultoria prática para comerciantes</h1>
-    <p>Análise do seu negócio com soluções personalizadas.</p>
+    <p>Análise do seu negócio com soluções personalizadas e aplicáveis.</p>
     <a href="#formulario" class="btn">Solicitar análise</a>
   </header>
 
@@ -26,14 +27,32 @@
   <section id="formulario">
     <h2>Solicitar consultoria</h2>
 
-    <form action="https://formspree.io/f/xpqrjjng"method="POST">
+    <form action="https://formspree.io/f/xpqrjjng" method="POST">
+
+      <!-- Proteção anti-spam -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <!-- Redirecionamento após envio -->
+      <input type="hidden" name="_redirect" value="https://seudominio.com/obrigado.html">
+
       <input type="text" name="nome" placeholder="Seu nome" required>
+
       <input type="text" name="negocio" placeholder="Nome do negócio" required>
-      <input type="text" name="segmento" placeholder="Segmento" required>
+
+      <input type="text" name="segmento" placeholder="Segmento do negócio" required>
+
       <textarea name="desafio" placeholder="Descreva seu principal desafio" required></textarea>
+
       <input type="email" name="email" placeholder="Seu e-mail" required>
-      <input type="text" name="whatsapp" placeholder="WhatsApp (opcional)">
-      <button type="submit">Enviar</button>
+
+      <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)">
+
+      <button type="submit">Enviar solicitação</button>
+
+      <p class="privacidade">
+        🔒 As informações enviadas são confidenciais e usadas apenas para a análise solicitada.
+      </p>
+
     </form>
   </section>
 
@@ -43,3 +62,4 @@
 
 </body>
 </html>
+
