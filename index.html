@@ -11,20 +11,23 @@
 </head>
 <body>
 
-  <!-- HERO / TOPO COM IMAGEM DE FUNDO -->
-  <header>
-    <h1>Consultoria para lojas</h1>
-    <p>
-      Análise estratégica do seu negócio com soluções simples,
-      aplicáveis e focadas em resultado.
-    </p>
-    <a href="#formulario" class="btn">Solicitar análise</a>
+  <!-- HERO / TOPO COM FUNDO LED -->
+  <header id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="neon-text">Consultoria para Lojas</h1>
+      <p>
+        Análise estratégica do seu negócio com soluções simples,
+        aplicáveis e focadas em resultado.
+      </p>
+      <a href="#formulario" class="btn neon-btn">Solicitar Análise</a>
+    </div>
   </header>
 
   <!-- COMO FUNCIONA -->
-  <section>
-    <h2>Como funciona</h2>
-    <ol>
+  <section id="como-funciona" class="section">
+    <h2 class="section-title">Como funciona</h2>
+    <ol class="steps">
       <li>Você preenche o formulário com informações do seu negócio</li>
       <li>Eu analiso os dados e identifico oportunidades de melhoria</li>
       <li>Você recebe uma solução prática por e-mail ou WhatsApp</li>
@@ -32,70 +35,37 @@
   </section>
 
   <!-- FORMULÁRIO -->
-  <section id="formulario">
-    <h2>Solicitar consultoria</h2>
+  <section id="formulario" class="section">
+    <h2 class="section-title">Solicitar Consultoria</h2>
 
-    <form action="https://formspree.io/f/xpqrjjng" method="POST">
-
+    <form action="https://formspree.io/f/xpqrjjng" method="POST" id="consultoria-form">
       <!-- Anti-spam -->
       <input type="text" name="_gotcha" style="display:none">
-
       <!-- Redirecionamento pós-envio -->
       <input type="hidden" name="_redirect" value="https://seudominio.com/obrigado.html">
 
-      <input
-        type="text"
-        name="nome"
-        placeholder="Seu nome"
-        required
-      >
-
-      <input
-        type="text"
-        name="negocio"
-        placeholder="Nome do negócio"
-        required
-      >
-
-      <input
-        type="text"
-        name="segmento"
-        placeholder="Segmento do negócio"
-        required
-      >
-
-      <textarea
-        name="desafio"
-        placeholder="Descreva seu principal desafio hoje"
-        required
-      ></textarea>
-
-      <input
-        type="email"
-        name="email"
-        placeholder="Seu e-mail"
-        required
-      >
-
-      <input
-        type="tel"
-        name="whatsapp"
-        placeholder="WhatsApp (opcional)"
-      >
-
-      <button type="submit">Enviar solicitação</button>
-
+      <input type="text" name="nome" placeholder="Seu nome" required autocomplete="name">
+      <input type="text" name="negocio" placeholder="Nome do negócio" required autocomplete="organization">
+      <input type="text" name="segmento" placeholder="Segmento do negócio" required autocomplete="off">
+      <textarea name="desafio" placeholder="Descreva seu principal desafio hoje" required></textarea>
+      <input type="email" name="email" placeholder="Seu e-mail" required autocomplete="email">
+      <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)" autocomplete="tel">
+      
+      <button type="submit" class="btn neon-btn">Enviar Solicitação</button>
+      
       <p class="privacidade">
         🔒 As informações enviadas são confidenciais e usadas apenas para a análise solicitada.
       </p>
-
     </form>
   </section>
 
   <!-- RODAPÉ -->
   <footer>
-    <p>© 2026 – Consultoria Online/Paulo Kataoka</p>
+    <p>© 2026 – Consultoria Online / Paulo Kataoka</p>
   </footer>
+
+  <!-- LINK PARA JAVASCRIPT -->
+  <script src="script.js"></script>
 
 </body>
 </html>
